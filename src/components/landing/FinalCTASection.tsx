@@ -37,15 +37,14 @@ export const FinalCTASection: React.FC = () => {
   };
 
   const benefits = [
-    'Demonstração gratuita personalizada',
-    'Setup completo em até 48 horas',
+    'Demonstração personalizada em 15 min',
+    'Setup completo em 48 horas',
     'Treinamento da equipe incluso',
-    'Suporte técnico especializado',
-    'Sem taxa de instalação'
+    'Suporte técnico especializado'
   ];
 
   return (
-    <section className="py-20 bg-background-secondary relative overflow-hidden">
+    <section className="py-16 bg-background-secondary relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-primary/5 pointer-events-none" />
       
@@ -53,12 +52,11 @@ export const FinalCTASection: React.FC = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Transforme seu Atendimento <span className="text-brand-primary">Agora</span>
+              <span className="text-brand-primary">Pare de Perder Vendas</span><br />
+              Transforme seu WhatsApp Hoje
             </h2>
-            <p className="text-foreground-muted text-lg">
-              Pare de perder vendas por causa de um atendimento desorganizado. 
-              <br className="hidden md:block" />
-              Solicite uma demonstração gratuita e veja a diferença em 30 dias.
+            <p className="text-foreground-muted text-xl font-medium">
+              Demonstração gratuita em 15 minutos + Setup completo em 48h
             </p>
           </div>
           
@@ -81,9 +79,12 @@ export const FinalCTASection: React.FC = () => {
             
             {/* Contact Form */}
             <GTorCard variant="gradient" className="order-1 lg:order-2 glow-primary">
-              <h3 className="text-xl font-bold text-foreground mb-6 text-center">
-                Solicitar Demonstração Gratuita
+              <h3 className="text-xl font-bold text-foreground mb-2 text-center">
+                ⚡ Demonstração Gratuita
               </h3>
+              <p className="text-center text-brand-primary font-medium mb-6 text-sm">
+                Veja como aumentar suas vendas em 15 minutos
+              </p>
               
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>

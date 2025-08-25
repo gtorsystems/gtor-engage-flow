@@ -6,35 +6,35 @@ export const ProblemSection: React.FC = () => {
   const problems = [
     {
       icon: MessageCircleX,
-      title: 'Múltiplos Números Confusos',
-      description: 'Clientes não sabem qual número usar e mensagens se perdem entre diferentes WhatsApps.'
+      title: 'Múltiplos WhatsApps',
+      description: 'Cliente confuso não sabe onde mandar mensagem = Vendas perdidas'
     },
     {
       icon: Clock,
-      title: 'Mensagens Não Respondidas',
-      description: 'Perda de vendas e clientes insatisfeitos por demora ou esquecimento no atendimento.'
+      title: 'Resposta Lenta',
+      description: 'Demora para responder = Cliente vai para o concorrente'
     },
     {
       icon: Users,
-      title: 'Equipe Desorganizada',
-      description: 'Falta de coordenação entre a equipe resulta em atendimento duplicado ou perdido.'
+      title: 'Equipe Perdida',
+      description: 'Mensagens duplicadas, esquecidas = Cliente irritado'
     },
     {
       icon: BarChart3,
-      title: 'Falta de Controle',
-      description: 'Impossibilidade de acompanhar métricas e desempenho do atendimento ao cliente.'
+      title: 'Sem Controle',
+      description: 'Não sabe quantas vendas perdeu = Dinheiro indo embora'
     }
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-16 bg-background">
       <div className="container px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Sua empresa se identifica com isso?
+            <span className="text-destructive">Pare de Perder</span> Clientes e Vendas
           </h2>
           <p className="text-foreground-muted text-lg max-w-2xl mx-auto">
-            Estes são os principais problemas que pequenos negócios enfrentam com o atendimento via WhatsApp
+            Estes são os 4 principais problemas que matam as vendas no WhatsApp
           </p>
         </div>
         

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import gtorLogo from '@/assets/gtor-logo.png';
+import gtorLogo from '/lovable-uploads/da751f81-8e81-4184-86f7-e9244410b561.png';
 
 export const HeroSection: React.FC = () => {
   return (
@@ -10,30 +10,40 @@ export const HeroSection: React.FC = () => {
       
       <div className="container relative z-10 text-center px-4">
         {/* Logo */}
-        <div className="mb-8 flex justify-center">
+        <div className="mb-12 flex justify-center">
           <img 
             src={gtorLogo} 
-            alt="GTor Systems Logo" 
-            className="h-16 w-16 opacity-90"
+            alt="GTor Systems - Automação Inteligente para WhatsApp" 
+            className="h-24 w-24 md:h-32 md:w-32 glow-subtle hover:glow-primary transition-smooth"
           />
         </div>
         
         {/* Main headline */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-          Chega de Confusão no WhatsApp.<br />
-          <span className="text-brand-primary">Centralize seu Atendimento</span>{' '}
-          e Venda Mais.
+          <span className="text-brand-primary">Transforme</span> seu WhatsApp<br />
+          em uma <span className="text-brand-primary">Máquina de Vendas</span>
         </h1>
         
         {/* Subheadline */}
-        <p className="text-lg md:text-xl text-foreground-muted max-w-3xl mx-auto mb-8 leading-relaxed">
-          Unificamos todos os seus números de atendimento em um só, com assistentes virtuais que trabalham 24/7 para você.
+        <p className="text-xl md:text-2xl text-foreground-muted max-w-4xl mx-auto mb-6 leading-relaxed font-medium">
+          Unificamos todos os WhatsApps da sua empresa + Automação Inteligente 24/7
         </p>
         
-        {/* Slogan */}
-        <p className="text-brand-secondary font-medium mb-12 uppercase tracking-wider">
-          Automação Inteligente para o seu Atendimento
-        </p>
+        {/* Benefits */}
+        <div className="flex flex-wrap justify-center gap-6 mb-12 text-brand-secondary">
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
+            <span className="text-sm font-medium">Mais Vendas</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
+            <span className="text-sm font-medium">Zero Mensagens Perdidas</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
+            <span className="text-sm font-medium">Equipe Organizada</span>
+          </div>
+        </div>
         
         {/* CTA Button */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

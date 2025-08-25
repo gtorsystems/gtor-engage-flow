@@ -6,35 +6,35 @@ export const SolutionSection: React.FC = () => {
   const benefits = [
     {
       icon: MessageSquare,
-      title: 'Atendimento Centralizado',
-      description: 'Todos os WhatsApps da empresa unificados em uma única plataforma. Sua equipe responde tudo de um só lugar.'
+      title: '+30% Mais Vendas',
+      description: 'Resposta imediata + automação = mais conversões garantidas'
     },
     {
       icon: Bot,
-      title: 'Automação Inteligente',
-      description: 'Chatbots fazem triagem, respondem dúvidas frequentes e qualificam leads antes de passar para humanos.'
+      title: 'Zero Mensagens Perdidas',
+      description: 'Assistente virtual trabalha 24/7, sua equipe nunca mais vai esquecer um cliente'
     },
     {
       icon: TrendingUp,
-      title: 'Mais Vendas',
-      description: 'Resposta mais rápida, organização melhor e automação resultam em mais conversões e satisfação.'
+      title: 'Tempo da Equipe 50% Otimizado',
+      description: 'Automação resolve 70% das dúvidas, equipe foca apenas em fechar vendas'
     },
     {
       icon: Users2,
-      title: 'Equipe Mais Produtiva',
-      description: 'Colaboração entre a equipe com relatórios completos para gestores acompanharem o desempenho.'
+      title: 'Controle Total',
+      description: 'Relatórios completos mostram exatamente quantas vendas você está fazendo'
     }
   ];
 
   return (
-    <section className="py-20 bg-background-secondary">
+    <section className="py-16 bg-background-secondary">
       <div className="container px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            A Revolução no seu <span className="text-brand-primary">Atendimento</span>
+            <span className="text-brand-primary">1 Número</span> + <span className="text-brand-primary">Automação</span> = <span className="text-brand-primary">Mais Vendas</span>
           </h2>
-          <p className="text-foreground-muted text-lg max-w-3xl mx-auto mb-8">
-            Nossa plataforma implementa uma <strong>caixa de entrada unificada</strong> que centraliza todos os canais de WhatsApp da sua empresa em um único número oficial.
+          <p className="text-foreground-muted text-xl max-w-3xl mx-auto mb-8 font-medium">
+            Todos os WhatsApps da sua empresa unificados em 1 só número + Assistente Virtual 24/7
           </p>
           
           {/* Diagram - Simple representation */}
