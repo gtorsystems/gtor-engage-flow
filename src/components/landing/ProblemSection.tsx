@@ -57,7 +57,7 @@ export const ProblemSection: React.FC = () => {
         </div>
         
         <div className="text-center mt-12">
-          <p className="text-brand-primary font-semibold text-lg">
+          <p className="text-foreground font-bold text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto glow-subtle">
             Se você se identificou com pelo menos um desses problemas, temos a solução perfeita para você.
           </p>
         </div>
