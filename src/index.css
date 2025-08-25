@@ -1,42 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* GTor Systems Design System - Dark Theme Landing Page */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark theme - GTor Systems Landing Page */
+    --background: 0 0% 0%; /* Pure black background */
+    --background-secondary: 0 0% 7%; /* Slightly lighter black for cards */
+    --foreground: 0 0% 100%; /* Pure white for titles */
+    --foreground-muted: 0 0% 92%; /* Light gray for body text */
+    --foreground-subtle: 210 2% 42%; /* Subtle gray for secondary text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Brand colors */
+    --brand-primary: 212 100% 50%; /* Electric blue #007BFF */
+    --brand-primary-hover: 212 100% 45%;
+    --brand-secondary: 210 7% 42%; /* Blue-gray #6C757D */
+    --brand-accent: 212 100% 60%; /* Lighter blue for highlights */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Semantic colors */
+    --card: 0 0% 7%;
+    --card-foreground: 0 0% 100%;
+    --card-border: 210 7% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --primary: 212 100% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --secondary: 210 7% 15%;
+    --secondary-foreground: 0 0% 92%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 7% 15%;
+    --muted-foreground: 210 7% 42%;
+
+    --accent: 212 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 7% 15%;
+    --input: 210 7% 15%;
+    --input-foreground: 0 0% 100%;
+    --ring: 212 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom design tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(0 0% 0%), hsl(0 0% 4%));
+    --card-gradient: linear-gradient(145deg, hsl(0 0% 7%), hsl(210 7% 10%));
+    --glow-primary: 0 0 40px hsl(212 100% 50% / 0.3);
+    --glow-subtle: 0 0 20px hsl(212 100% 50% / 0.1);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +123,35 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+}
+
+@layer components {
+  /* Hero section styles */
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+  
+  .card-gradient {
+    background: var(--card-gradient);
+  }
+  
+  /* Custom glow effects */
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+  
+  .glow-subtle {
+    box-shadow: var(--glow-subtle);
+  }
+  
+  /* Smooth transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
   }
 }
