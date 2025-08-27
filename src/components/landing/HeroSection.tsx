@@ -25,39 +25,20 @@ export const HeroSection: React.FC = () => {
         </h1>
         
         {/* Subheadline */}
-        <p className="text-xl md:text-2xl text-foreground-muted max-w-4xl mx-auto mb-6 leading-relaxed font-medium">
+        <p className="text-xl md:text-2xl text-foreground-muted max-w-4xl mx-auto mb-12 leading-relaxed font-medium">
           Centralize todos os canais de atendimento (WhatsApp, Instagram, Chat) em uma única plataforma e automatize o fluxo de conversas com Inteligência Artificial 24/7.
         </p>
         
-        {/* Benefits */}
-        <div className="flex flex-wrap justify-center gap-6 mb-12 text-brand-secondary">
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
-            <span className="text-sm font-medium">Atendimento Unificado</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
-            <span className="text-sm font-medium">IA 24/7</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
-            <span className="text-sm font-medium">Controle Total</span>
-          </div>
-        </div>
-        
         {/* CTA Button */}
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex justify-center">
           <Button 
             variant="hero" 
             size="xl" 
-            className="min-w-[400px]"
+            className="min-w-[400px] text-lg font-semibold px-8 py-4 glow-primary hover:glow-primary"
             onClick={() => window.open('https://wa.me/5567992054103?text=Olá, gostaria de solicitar uma demonstração gratuita da plataforma GTor Systems', '_blank')}
           >
-            Fale Conosco agora no WhatsApp e solicite uma demonstração gratuita
+            Clique aqui e fale conosco no Whatsapp!
           </Button>
-          <p className="text-foreground-muted text-lg max-w-md text-center">
-            Envie uma mensagem para <span className="text-brand-primary font-semibold">(67) 99205-4103</span> para uma demonstração personalizada ou orçamento para o seu negócio.
-          </p>
         </div>
       </div>
       

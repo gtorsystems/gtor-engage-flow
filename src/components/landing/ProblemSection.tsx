@@ -30,11 +30,11 @@ export const ProblemSection: React.FC = () => {
     <section className="py-16 bg-background">
       <div className="container px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            <span className="text-destructive">Problemas</span> no Atendimento ao Cliente
+          <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-4">
+            Seu atendimento ainda está no <span className="text-destructive">passado</span>?
           </h2>
-          <p className="text-foreground-muted text-lg max-w-2xl mx-auto">
-            Estas são as principais dificuldades que afetam a qualidade do seu atendimento
+          <p className="text-foreground-muted text-xl max-w-2xl mx-auto leading-relaxed">
+            Estas são as principais dificuldades que afetam a <span className="font-semibold text-brand-primary">qualidade</span> do seu atendimento
           </p>
         </div>
         
@@ -57,8 +57,8 @@ export const ProblemSection: React.FC = () => {
         </div>
         
         <div className="text-center mt-12">
-          <p className="text-foreground font-bold text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto glow-subtle">
-            Se você se identificou com pelo menos um desses problemas, temos a solução perfeita para você.
+          <p className="text-foreground font-extrabold text-2xl md:text-3xl leading-relaxed max-w-4xl mx-auto glow-subtle">
+            Se você se identificou com pelo menos um desses problemas, temos a <span className="text-brand-primary">solução perfeita</span> para você.
           </p>
         </div>
       </div>
