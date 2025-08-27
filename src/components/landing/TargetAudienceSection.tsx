@@ -1,28 +1,28 @@
 import React from 'react';
-import { Scissors, Store, Stethoscope, PawPrint } from 'lucide-react';
+import { Scissors, Store, Stethoscope, Heart } from 'lucide-react';
 import { GTorCard } from './GTorCard';
 
 export const TargetAudienceSection: React.FC = () => {
   const segments = [
     {
       icon: Stethoscope,
-      title: 'Clínicas',
-      description: 'Agendamentos + Confirmações automatizadas'
+      title: 'Clínicas Médicas',
+      description: 'Agendamentos e confirmações automatizados com histórico centralizado'
     },
     {
-      icon: PawPrint,
+      icon: Heart,
       title: 'Pet Shops',
-      description: 'Consultas organizadas, donos informados'
+      description: 'Atendimento organizado para emergências com fluxo inteligente'
     },
     {
       icon: Scissors,
-      title: 'Salões',
-      description: 'Horários + Promoções no automático'
+      title: 'Salões de Beleza',
+      description: 'Gestão de conversas unificada com controle de qualidade'
     },
     {
       icon: Store,
       title: 'Comércios',
-      description: 'Pedidos organizados, vendas aumentadas'
+      description: 'Suporte centralizado com relatórios de atendimento'
     }
   ];
 
@@ -34,7 +34,7 @@ export const TargetAudienceSection: React.FC = () => {
             Funciona para <span className="text-brand-primary">Qualquer Negócio</span>
           </h2>
           <p className="text-foreground-muted text-lg max-w-2xl mx-auto">
-            Centenas de empresas já transformaram seus resultados
+            Melhore o atendimento e a gestão de conversas em qualquer segmento
           </p>
         </div>
         

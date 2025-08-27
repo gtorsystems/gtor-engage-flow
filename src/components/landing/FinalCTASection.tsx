@@ -1,155 +1,93 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { GTorCard } from './GTorCard';
-import { CheckCircle, Phone } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
+import { CheckCircle, MessageCircle } from 'lucide-react';
 
 export const FinalCTASection: React.FC = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    whatsapp: '',
-    businessType: ''
-  });
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!formData.name || !formData.whatsapp || !formData.businessType) {
-      toast({
-        title: "Preencha todos os campos",
-        description: "Precisamos de suas informações para agendar a demonstração.",
-        variant: "destructive"
-      });
-      return;
-    }
-
-    // Here you would normally send the data to your backend
-    toast({
-      title: "Demonstração agendada!",
-      description: "Entraremos em contato em até 24 horas.",
-    });
-
-    // Reset form
-    setFormData({ name: '', whatsapp: '', businessType: '' });
-  };
-
-  const benefits = [
-    'Demonstração personalizada em 15 min',
-    'Setup completo em 48 horas',
-    'Treinamento da equipe incluso',
-    'Suporte técnico especializado'
-  ];
-
   return (
-    <section className="py-16 bg-background-secondary relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/5 via-transparent to-brand-primary/5 pointer-events-none" />
-      
-      <div className="container px-4 relative z-10">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              <span className="text-brand-primary">Pare de Perder Vendas</span><br />
-              Transforme seu WhatsApp Hoje
-            </h2>
-            <p className="text-foreground-muted text-xl font-medium">
-              Demonstração gratuita em 15 minutos + Setup completo em 48h
-            </p>
-          </div>
-          
-          <div className="grid lg:grid-cols-2 gap-8 items-start">
-            {/* Benefits */}
-            <GTorCard variant="gradient" className="order-2 lg:order-1">
-              <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
-                <Phone className="h-5 w-5 text-brand-primary" />
-                O que você ganha:
-              </h3>
-              <div className="space-y-4">
-                {benefits.map((benefit, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <CheckCircle className="h-5 w-5 text-brand-primary flex-shrink-0" />
-                    <span className="text-foreground-muted">{benefit}</span>
-                  </div>
-                ))}
+    <section className="py-16 bg-background-secondary">
+      <div className="container px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <span className="text-brand-primary">Transforme</span> seu Atendimento Agora
+          </h2>
+          <p className="text-foreground-muted text-xl max-w-3xl mx-auto">
+            Experimente nossa plataforma e veja a diferença que um atendimento unificado pode fazer
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          {/* Benefits */}
+          <GTorCard variant="gradient" className="p-8">
+            <h3 className="text-2xl font-bold text-foreground mb-6">
+              O que você ganha:
+            </h3>
+            <div className="space-y-4">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
+                <span className="text-foreground-muted">
+                  Central unificada de todos os canais de comunicação
+                </span>
               </div>
-            </GTorCard>
-            
-            {/* Contact Form */}
-            <GTorCard variant="gradient" className="order-1 lg:order-2 glow-primary">
-              <h3 className="text-xl font-bold text-foreground mb-2 text-center">
-                ⚡ Demonstração Gratuita
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
+                <span className="text-foreground-muted">
+                  IA integrada para atendimento 24/7
+                </span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
+                <span className="text-foreground-muted">
+                  Relatórios completos de qualidade e tempo de resposta
+                </span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
+                <span className="text-foreground-muted">
+                  Fluxo inteligente de transferência entre setores
+                </span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="h-5 w-5 text-brand-primary mt-0.5 flex-shrink-0" />
+                <span className="text-foreground-muted">
+                  Histórico completo e organizado de cada cliente
+                </span>
+              </div>
+            </div>
+          </GTorCard>
+
+          {/* Contact CTA */}
+          <GTorCard variant="gradient" className="p-8 text-center flex flex-col justify-center">
+            <div className="mb-8">
+              <MessageCircle className="h-16 w-16 text-brand-primary mx-auto mb-4 glow-subtle" />
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Solicite sua Demonstração
               </h3>
-              <p className="text-center text-brand-primary font-medium mb-6 text-sm">
-                Veja como aumentar suas vendas em 15 minutos
+              <p className="text-foreground-muted mb-6">
+                Veja na prática como nossa plataforma pode revolucionar seu atendimento
               </p>
+            </div>
+
+            <div className="space-y-4">
+              <Button 
+                variant="hero" 
+                size="xl" 
+                className="w-full"
+                onClick={() => window.open('https://wa.me/5567992054103?text=Olá, gostaria de solicitar uma demonstração gratuita da plataforma GTor Systems', '_blank')}
+              >
+                Fale Conosco agora no WhatsApp e solicite uma demonstração gratuita
+              </Button>
               
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Nome Completo
-                  </label>
-                  <Input
-                    type="text"
-                    placeholder="Digite seu nome"
-                    value={formData.name}
-                    onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
-                    className="bg-background border-card-border focus:border-brand-primary"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    WhatsApp
-                  </label>
-                  <Input
-                    type="tel"
-                    placeholder="(11) 99999-9999"
-                    value={formData.whatsapp}
-                    onChange={(e) => setFormData(prev => ({ ...prev, whatsapp: e.target.value }))}
-                    className="bg-background border-card-border focus:border-brand-primary"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Tipo de Negócio
-                  </label>
-                  <Select value={formData.businessType} onValueChange={(value) => setFormData(prev => ({ ...prev, businessType: value }))}>
-                    <SelectTrigger className="bg-background border-card-border focus:border-brand-primary">
-                      <SelectValue placeholder="Selecione seu segmento" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="clinica-medica">Clínica Médica</SelectItem>
-                      <SelectItem value="clinica-odontologica">Clínica Odontológica</SelectItem>
-                      <SelectItem value="pet-shop">Pet Shop / Veterinário</SelectItem>
-                      <SelectItem value="salao-beleza">Salão de Beleza</SelectItem>
-                      <SelectItem value="comercio-local">Comércio Local</SelectItem>
-                      <SelectItem value="escritorio">Escritório / Serviços</SelectItem>
-                      <SelectItem value="outro">Outro</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-                
-                <Button type="submit" variant="cta" size="lg" className="w-full mt-6">
-                  Solicitar Demonstração Gratuita
-                </Button>
-              </form>
-              
-              <p className="text-center text-foreground-subtle text-xs mt-4">
-                Entraremos em contato em até 24 horas úteis
-              </p>
-            </GTorCard>
-          </div>
-          
-          <div className="text-center mt-12">
-            <p className="text-foreground-subtle text-sm">
-              Dúvidas? Fale diretamente conosco: 
-              <span className="text-brand-primary font-medium ml-1">(11) 99999-9999</span>
-            </p>
-          </div>
+              <div className="bg-background/20 rounded-lg p-4 border border-card-border">
+                <p className="text-foreground-muted text-sm">
+                  <span className="font-semibold text-brand-primary">WhatsApp:</span> (67) 99205-4103
+                </p>
+                <p className="text-foreground-subtle text-xs mt-1">
+                  Demonstração personalizada ou orçamento para o seu negócio
+                </p>
+              </div>
+            </div>
+          </GTorCard>
         </div>
       </div>
     </section>

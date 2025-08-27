@@ -14,45 +14,50 @@ export const HeroSection: React.FC = () => {
           <img 
             src={gtorLogo} 
             alt="GTor Systems - Automação Inteligente para WhatsApp" 
-            className="h-32 w-32 md:h-48 md:w-48 lg:h-56 lg:w-56 glow-subtle hover:glow-primary transition-smooth"
+            className="w-[500px] h-[500px] glow-subtle hover:glow-primary transition-smooth"
           />
         </div>
         
         {/* Main headline */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-          <span className="text-brand-primary">Transforme</span> seu WhatsApp<br />
-          em uma <span className="text-brand-primary">Máquina de Vendas</span>
+          <span className="text-brand-primary">Revolutione</span> o Atendimento ao Cliente<br />
+          com <span className="text-brand-primary">IA e uma Central Unificada</span>
         </h1>
         
         {/* Subheadline */}
         <p className="text-xl md:text-2xl text-foreground-muted max-w-4xl mx-auto mb-6 leading-relaxed font-medium">
-          Unificamos todos os WhatsApps da sua empresa + Automação Inteligente 24/7
+          Centralize todos os canais de atendimento (WhatsApp, Instagram, Chat) em uma única plataforma e automatize o fluxo de conversas com Inteligência Artificial 24/7.
         </p>
         
         {/* Benefits */}
         <div className="flex flex-wrap justify-center gap-6 mb-12 text-brand-secondary">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
-            <span className="text-sm font-medium">Mais Vendas</span>
+            <span className="text-sm font-medium">Atendimento Unificado</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
-            <span className="text-sm font-medium">Zero Mensagens Perdidas</span>
+            <span className="text-sm font-medium">IA 24/7</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 bg-brand-primary rounded-full"></div>
-            <span className="text-sm font-medium">Equipe Organizada</span>
+            <span className="text-sm font-medium">Controle Total</span>
           </div>
         </div>
         
         {/* CTA Button */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="hero" size="xl" className="min-w-[280px]">
-            Fale com um Especialista
+        <div className="flex flex-col items-center gap-4">
+          <Button 
+            variant="hero" 
+            size="xl" 
+            className="min-w-[400px]"
+            onClick={() => window.open('https://wa.me/5567992054103?text=Olá, gostaria de solicitar uma demonstração gratuita da plataforma GTor Systems', '_blank')}
+          >
+            Fale Conosco agora no WhatsApp e solicite uma demonstração gratuita
           </Button>
-          <Button variant="hero-outline" size="xl" className="min-w-[280px]">
-            Ver Demonstração
-          </Button>
+          <p className="text-foreground-muted text-lg max-w-md text-center">
+            Envie uma mensagem para <span className="text-brand-primary font-semibold">(67) 99205-4103</span> para uma demonstração personalizada ou orçamento para o seu negócio.
+          </p>
         </div>
       </div>
       

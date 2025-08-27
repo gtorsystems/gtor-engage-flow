@@ -6,23 +6,23 @@ export const SolutionSection: React.FC = () => {
   const benefits = [
     {
       icon: MessageSquare,
-      title: '+30% Mais Vendas',
-      description: 'Resposta imediata + automação = mais conversões garantidas'
+      title: 'WhatsApp Centralizado',
+      description: 'Unificamos todos os números de vendedores e setores em um único número de contato'
     },
     {
       icon: Bot,
-      title: 'Zero Mensagens Perdidas',
-      description: 'Assistente virtual trabalha 24/7, sua equipe nunca mais vai esquecer um cliente'
+      title: 'Fluxo de Atendimento Inteligente',
+      description: 'Transferimos conversas entre atendentes e direcionamos para o setor correto (vendas, suporte, etc.)'
     },
     {
       icon: TrendingUp,
-      title: 'Tempo da Equipe 50% Otimizado',
-      description: 'Automação resolve 70% das dúvidas, equipe foca apenas em fechar vendas'
+      title: 'IA para Atendimento Natural',
+      description: 'Usamos IA para conversar naturalmente com os clientes e transferir para um humano quando necessário'
     },
     {
       icon: Users2,
-      title: 'Controle Total',
-      description: 'Relatórios completos mostram exatamente quantas vendas você está fazendo'
+      title: 'Gestão e Auditoria',
+      description: 'Oferecemos relatórios de tempo de resposta e qualidade do atendimento, garantindo controle total'
     }
   ];
 
@@ -31,10 +31,10 @@ export const SolutionSection: React.FC = () => {
       <div className="container px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            <span className="text-brand-primary">1 Número</span> + <span className="text-brand-primary">Automação</span> = <span className="text-brand-primary">Mais Vendas</span>
+            <span className="text-brand-primary">Solução Completa</span> para <span className="text-brand-primary">Atendimento Unificado</span>
           </h2>
           <p className="text-foreground-muted text-xl max-w-3xl mx-auto mb-8 font-medium">
-            Todos os WhatsApps da sua empresa unificados em 1 só número + Assistente Virtual 24/7
+            Plataforma completa que centraliza todos os canais de comunicação com IA integrada
           </p>
           
           {/* Diagram - Simple representation */}

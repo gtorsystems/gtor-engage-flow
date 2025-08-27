@@ -6,23 +6,23 @@ export const ProblemSection: React.FC = () => {
   const problems = [
     {
       icon: MessageCircleX,
-      title: 'Múltiplos WhatsApps',
-      description: 'Cliente confuso não sabe onde mandar mensagem = Vendas perdidas'
+      title: 'Comunicação Fragmentada',
+      description: 'Múltiplos aplicativos e canais dispersos prejudicam a eficiência do atendimento'
     },
     {
       icon: Clock,
-      title: 'Resposta Lenta',
-      description: 'Demora para responder = Cliente vai para o concorrente'
+      title: 'Falta de Controle',
+      description: 'Sem visibilidade sobre qualidade e velocidade do atendimento da equipe'
     },
     {
       icon: Users,
-      title: 'Equipe Perdida',
-      description: 'Mensagens duplicadas, esquecidas = Cliente irritado'
+      title: 'Histórico Desorganizado',
+      description: 'Informações do cliente espalhadas, dificultando o acompanhamento'
     },
     {
       icon: BarChart3,
-      title: 'Sem Controle',
-      description: 'Não sabe quantas vendas perdeu = Dinheiro indo embora'
+      title: 'Confusão do Cliente',
+      description: 'Vários números de contato para a mesma empresa geram desorientação'
     }
   ];
 
@@ -31,10 +31,10 @@ export const ProblemSection: React.FC = () => {
       <div className="container px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            <span className="text-destructive">Pare de Perder</span> Clientes e Vendas
+            <span className="text-destructive">Problemas</span> no Atendimento ao Cliente
           </h2>
           <p className="text-foreground-muted text-lg max-w-2xl mx-auto">
-            Estes são os 4 principais problemas que matam as vendas no WhatsApp
+            Estas são as principais dificuldades que afetam a qualidade do seu atendimento
           </p>
         </div>
         
