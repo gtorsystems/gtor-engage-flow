@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
             <img 
               src={gtorLogo} 
               alt="GTor Systems - Automação Inteligente" 
-              className="h-20 w-20 glow-subtle" 
+              className="w-[500px] h-[500px] glow-subtle" 
             />
           </div>
           
@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
               className="flex items-center gap-3 text-foreground hover:text-brand-primary transition-smooth group"
             >
               <MessageCircle className="h-5 w-5 text-brand-primary group-hover:glow-subtle transition-smooth" />
-              <span className="font-medium">(67) 99205-4103</span>
+              <span className="font-medium text-2xl">(67) 99205-4103</span>
             </a>
             
             <a 
@@ -31,7 +31,7 @@ export const Footer: React.FC = () => {
               className="flex items-center gap-3 text-foreground hover:text-brand-primary transition-smooth group"
             >
               <Mail className="h-5 w-5 text-brand-primary group-hover:glow-subtle transition-smooth" />
-              <span className="font-medium">contato@gtorsystems.cloud</span>
+              <span className="font-medium text-2xl">contato@gtorsystems.cloud</span>
             </a>
           </div>
           

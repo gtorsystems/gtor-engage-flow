@@ -55,16 +55,6 @@ export const TargetAudienceSection: React.FC = () => {
             </GTorCard>
           ))}
         </div>
-        
-        <div className="text-center">
-          <GTorCard variant="gradient" className="max-w-xl mx-auto p-6">
-            <p className="text-brand-primary font-semibold text-lg">
-              ✅ 1 a 50+ funcionários<br/>
-              ✅ Setup em 48 horas<br/>
-              ✅ Treinamento incluso
-            </p>
-          </GTorCard>
-        </div>
       </div>
     </section>
   );

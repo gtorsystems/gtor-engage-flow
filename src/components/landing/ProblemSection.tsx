@@ -6,23 +6,23 @@ export const ProblemSection: React.FC = () => {
   const problems = [
     {
       icon: MessageCircleX,
-      title: 'Comunicação Fragmentada',
-      description: 'Múltiplos aplicativos e canais dispersos prejudicam a eficiência do atendimento'
+      title: 'Comunicação ineficiente',
+      description: 'A dificuldade de entendimento do que o cliente quer faz ele ter uma péssima impressão do seu negócio.'
     },
     {
       icon: Clock,
-      title: 'Falta de Controle',
-      description: 'Sem visibilidade sobre qualidade e velocidade do atendimento da equipe'
+      title: 'Demora pra responder',
+      description: 'Seus clientes frustrados pela demora no atendimento no Whatsapp, indo pra concorrencia.'
     },
     {
       icon: Users,
-      title: 'Histórico Desorganizado',
-      description: 'Informações do cliente espalhadas, dificultando o acompanhamento'
+      title: 'Vários números de contato',
+      description: 'O cliente é do seu atendente e não da sua empresa, impedindo o seu gerenciamento adequado.'
     },
     {
       icon: BarChart3,
-      title: 'Confusão do Cliente',
-      description: 'Vários números de contato para a mesma empresa geram desorientação'
+      title: 'Falta de controle',
+      description: 'Quantas mensagens por dia sua empresa recebe? Quantas não são atendidas? Já pensou nisso?'
     }
   ];
 
@@ -34,7 +34,7 @@ export const ProblemSection: React.FC = () => {
             Seu atendimento ainda está no <span className="text-destructive">passado</span>?
           </h2>
           <p className="text-foreground-muted text-xl max-w-2xl mx-auto leading-relaxed">
-            Estas são as principais dificuldades que afetam a <span className="font-semibold text-brand-primary">qualidade</span> do seu atendimento
+            Estes são os problemas mais comuns nos atendimentos virtuais:
           </p>
         </div>
         

@@ -20,13 +20,13 @@ export const HeroSection: React.FC = () => {
         
         {/* Main headline */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-          <span className="text-brand-primary">Revolutione</span> o Atendimento ao Cliente<br />
-          com <span className="text-brand-primary">IA e uma Central Unificada</span>
+          <span className="text-brand-primary">Transforme</span> a experiência dos seus clientes<br />
+          com as <span className="text-brand-primary">soluções da GTor Systems</span>
         </h1>
         
         {/* Subheadline */}
         <p className="text-xl md:text-2xl text-foreground-muted max-w-4xl mx-auto mb-12 leading-relaxed font-medium">
-          Centralize todos os canais de atendimento (WhatsApp, Instagram, Chat) em uma única plataforma e automatize o fluxo de conversas com Inteligência Artificial 24/7.
+          Já pensou em ter um atendimento 24h por dia no seu negócio ou em ter uma Central de Atendimento multicanais?
         </p>
         
         {/* CTA Button */}
@@ -37,7 +37,7 @@ export const HeroSection: React.FC = () => {
             className="min-w-[400px] text-lg font-semibold px-8 py-4 glow-primary hover:glow-primary"
             onClick={() => window.open('https://wa.me/5567992054103?text=Olá, gostaria de solicitar uma demonstração gratuita da plataforma GTor Systems', '_blank')}
           >
-            Clique aqui e fale conosco no Whatsapp!
+            Clique aqui e descubra como!
           </Button>
         </div>
       </div>

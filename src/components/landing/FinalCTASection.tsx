@@ -9,10 +9,10 @@ export const FinalCTASection: React.FC = () => {
       <div className="container px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6">
-            <span className="text-brand-primary">Transforme</span> seu Atendimento Agora
+            <span className="text-brand-primary">Revolucione</span> o seu Atendimento!
           </h2>
           <p className="text-foreground-muted text-xl max-w-3xl mx-auto leading-relaxed">
-            Experimente nossa plataforma e veja a diferença que um atendimento unificado pode fazer para a <span className="font-semibold text-brand-primary">confiança do seu cliente</span>
+            Conheça nossos produtos e descubra o que melhor se encaixa em seu negócio, independente do seu <span className="font-semibold text-brand-primary">tamanho</span>.
           </p>
         </div>
 
@@ -20,7 +20,7 @@ export const FinalCTASection: React.FC = () => {
           {/* Benefits */}
           <GTorCard variant="gradient" className="p-8">
             <h3 className="text-2xl font-extrabold text-foreground mb-6">
-              O que você ganha:
+              Oferecemos:
             </h3>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
@@ -61,10 +61,10 @@ export const FinalCTASection: React.FC = () => {
             <div className="mb-8">
               <MessageCircle className="h-16 w-16 text-brand-primary mx-auto mb-4 glow-subtle" />
               <h3 className="text-2xl font-extrabold text-foreground mb-4">
-                Solicite sua Demonstração
+                Entre em contato agora
               </h3>
               <p className="text-foreground-muted mb-6">
-                Veja na prática como nossa plataforma pode revolucionar seu atendimento
+                GTor Systems é a solução que precisa para sua empresa.
               </p>
             </div>
 
