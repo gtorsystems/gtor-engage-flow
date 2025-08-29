@@ -49,47 +49,51 @@ export const SolutionSection: React.FC = () => {
                     <div className="grid grid-cols-2 gap-4 max-w-xs mx-auto">
                       {/* WhatsApp Icons - Desaligned */}
                       <div className="bg-foreground-subtle/10 p-4 rounded-lg border border-foreground-subtle/20 transform -rotate-2">
-                        <MessageSquare className="h-8 w-8 text-foreground-subtle mx-auto mb-2" />
-                        <span className="text-xs text-foreground-subtle">WhatsApp Vendedor A</span>
+                        <MessageSquare className="h-8 w-8 text-white mx-auto mb-2" />
+                        <span className="text-xs text-white">WhatsApp Vendedor A</span>
                       </div>
                       <div className="bg-foreground-subtle/10 p-4 rounded-lg border border-foreground-subtle/20 transform rotate-1 mt-4">
-                        <MessageSquare className="h-8 w-8 text-foreground-subtle mx-auto mb-2" />
-                        <span className="text-xs text-foreground-subtle">Instagram Direct</span>
+                        <MessageSquare className="h-8 w-8 text-white mx-auto mb-2" />
+                        <span className="text-xs text-white">Instagram Direct</span>
                       </div>
                       <div className="bg-foreground-subtle/10 p-4 rounded-lg border border-foreground-subtle/20 transform rotate-3 -mt-2">
-                        <MessageSquare className="h-8 w-8 text-foreground-subtle mx-auto mb-2" />
-                        <span className="text-xs text-foreground-subtle">Chat do Site</span>
+                        <MessageSquare className="h-8 w-8 text-white mx-auto mb-2" />
+                        <span className="text-xs text-white">Chat do Site</span>
                       </div>
                       <div className="bg-foreground-subtle/10 p-4 rounded-lg border border-foreground-subtle/20 transform -rotate-1">
-                        <MessageSquare className="h-8 w-8 text-foreground-subtle mx-auto mb-2" />
-                        <span className="text-xs text-foreground-subtle">WhatsApp Vendedor B</span>
+                        <MessageSquare className="h-8 w-8 text-white mx-auto mb-2" />
+                        <span className="text-xs text-white">WhatsApp Vendedor B</span>
                       </div>
                     </div>
                   </div>
                 </div>
                 
-                {/* Transição Animada */}
+                {/* Transição com Seta Estilizada */}
                 <div className="flex-shrink-0 flex flex-col lg:flex-row items-center">
                   <div className="flex items-center">
-                    <div className="w-8 h-8 bg-gradient-to-r from-foreground-subtle to-brand-primary rounded-full animate-pulse"></div>
-                    <div className="w-16 h-1 lg:w-1 lg:h-16 bg-gradient-to-r lg:bg-gradient-to-b from-foreground-subtle to-brand-primary"></div>
-                    <div className="w-8 h-8 bg-gradient-to-r from-foreground-subtle to-brand-primary rounded-full animate-pulse"></div>
+                    <svg 
+                      className="w-16 h-16 text-brand-primary animate-pulse" 
+                      fill="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/>
+                    </svg>
                   </div>
                 </div>
                 
                 {/* DEPOIS - A Solução GTor */}
                 <div className="flex-1 text-center">
                   <div className="text-foreground-subtle text-lg font-semibold mb-6 uppercase tracking-wide">DEPOIS</div>
-                  <div className="bg-gradient-to-br from-brand-primary/20 to-brand-accent/20 p-8 rounded-2xl border border-brand-primary/30 glow-primary">
+                  <div className="bg-gradient-to-br from-blue-500 to-cyan-400 p-8 rounded-3xl border border-blue-400/30 shadow-2xl shadow-blue-500/20 transform hover:scale-105 transition-all duration-300">
                     <img 
                       src={gtorLogo} 
                       alt="GTor Systems" 
-                      className="h-16 w-16 mx-auto mb-4 glow-subtle" 
+                      className="h-16 w-16 mx-auto mb-4 drop-shadow-lg" 
                     />
-                    <h3 className="text-xl font-bold text-brand-primary mb-2">
+                    <h3 className="text-xl font-bold text-white mb-2 drop-shadow-md">
                       Central de Atendimento Inteligente
                     </h3>
-                    <p className="text-sm text-foreground-muted">
+                    <p className="text-sm text-white/90 drop-shadow-sm">
                       Todos os canais unificados com IA
                     </p>
                   </div>
