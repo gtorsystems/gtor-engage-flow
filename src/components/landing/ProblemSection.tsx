@@ -11,8 +11,8 @@ export const ProblemSection: React.FC = () => {
     },
     {
       icon: Clock,
-      title: 'Demora pra responder',
-      description: 'Seus clientes frustrados pela demora no atendimento no Whatsapp, indo pra concorrencia.'
+      title: 'Demora para responder',
+      description: 'Seus clientes ficam frustrados com a demora no atendimento no WhatsApp e acabam indo para a concorrência.'
     },
     {
       icon: Users,

@@ -14,7 +14,7 @@ export const HeroSection: React.FC = () => {
           <img 
             src={gtorLogo} 
             alt="GTor Systems - Automação Inteligente para WhatsApp" 
-            className="w-[500px] h-[500px] glow-subtle hover:glow-primary transition-smooth"
+            className="w-40 h-auto md:w-80 lg:w-96 glow-subtle hover:glow-primary transition-smooth"
           />
         </div>
         

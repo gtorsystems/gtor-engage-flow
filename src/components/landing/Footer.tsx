@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
             <img 
               src={gtorLogo} 
               alt="GTor Systems - Automação Inteligente" 
-              className="w-[500px] h-[500px] glow-subtle" 
+              className="w-32 h-auto md:w-40 lg:w-48 glow-subtle" 
             />
           </div>
           
