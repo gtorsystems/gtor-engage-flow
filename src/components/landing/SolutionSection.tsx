@@ -32,7 +32,7 @@ export const SolutionSection: React.FC = () => {
       <div className="container px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6">
-            <span className="text-brand-primary">A GTor Systems</span> tem a <span className="text-brand-primary">solução!</span>
+            <span className="text-brand-primary">A GTor Systems</span> é o que <span className="text-brand-primary">precisa!</span>
           </h2>
           <p className="text-foreground-muted text-xl max-w-3xl mx-auto mb-12 font-medium leading-relaxed">
             Automatize o atendimento do seu Whatsapp com <span className="font-semibold text-brand-primary">Inteligência Artificial</span> ou tenha sua própria Central de Atendimento unificando todos os seus canais de atendimento!

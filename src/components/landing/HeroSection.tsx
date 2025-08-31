@@ -20,8 +20,8 @@ export const HeroSection: React.FC = () => {
         
         {/* Main headline */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 leading-tight">
-          <span className="text-brand-primary">Transforme</span> a experiência dos seus clientes<br />
-          com as <span className="text-brand-primary">soluções da GTor Systems</span>
+          Revolucione o atendimento aos seus clientes<br />
+          com soluções da <span className="text-brand-primary font-bold">GTor Systems</span>
         </h1>
         
         {/* Subheadline */}

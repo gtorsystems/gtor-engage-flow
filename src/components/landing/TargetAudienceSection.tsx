@@ -34,7 +34,7 @@ export const TargetAudienceSection: React.FC = () => {
             <span className="text-brand-primary">Funciona</span> para Qualquer Negócio
           </h2>
           <p className="text-foreground-muted text-xl max-w-3xl mx-auto leading-relaxed">
-            Independente do seu segmento, nossa plataforma se adapta às suas necessidades, melhorando o <span className="font-semibold text-brand-primary">atendimento</span> e a <span className="font-semibold text-brand-primary">gestão de conversas</span>
+            Independente do seu segmento, nossas soluções se adaptam às suas necessidades, melhorando o <span className="font-semibold text-brand-primary">atendimento</span> e a <span className="font-semibold text-brand-primary">gestão de conversas</span>.
           </p>
         </div>
         

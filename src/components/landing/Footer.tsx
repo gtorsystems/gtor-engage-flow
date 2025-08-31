@@ -40,6 +40,9 @@ export const Footer: React.FC = () => {
             <p className="text-foreground-muted">
               © 2025 GTor Systems. Todos os direitos reservados.
             </p>
+            <p className="text-foreground-muted mt-2">
+              GTor Systems – Soluções Inteligentes em Atendimento
+            </p>
           </div>
         </div>
       </div>
