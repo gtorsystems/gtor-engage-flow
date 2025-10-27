@@ -7,7 +7,7 @@ export const ProblemSection: React.FC = () => {
     {
       icon: MessageCircleX,
       title: 'Comunicação ineficiente',
-      description: 'A dificuldade de entendimento do que o cliente quer faz ele ter uma péssima impressão do seu negócio.'
+      description: 'A dificuldade em entender o que o cliente deseja faz com que ele tenha uma péssima impressão do seu negócio.'
     },
     {
       icon: Clock,
@@ -17,7 +17,7 @@ export const ProblemSection: React.FC = () => {
     {
       icon: Users,
       title: 'Vários números de contato',
-      description: 'O cliente é do seu atendente e não da sua empresa, impedindo o seu gerenciamento adequado.'
+      description: 'O cliente fica vinculado ao atendente e não à sua empresa, impedindo um gerenciamento adequado.'
     },
     {
       icon: BarChart3,

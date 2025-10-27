@@ -14,7 +14,7 @@ export const HeroSection: React.FC = () => {
           <img 
             src={gtorLogo} 
             alt="GTor Systems - Automação Inteligente para WhatsApp" 
-            className="w-40 h-auto md:w-80 lg:w-96 glow-subtle hover:glow-primary transition-smooth"
+            className="w-80 h-auto md:w-[40rem] lg:w-[48rem] glow-subtle hover:glow-primary transition-smooth"
           />
         </div>
         
@@ -26,7 +26,7 @@ export const HeroSection: React.FC = () => {
         
         {/* Subheadline */}
         <p className="text-xl md:text-2xl text-foreground-muted max-w-4xl mx-auto mb-12 leading-relaxed font-medium">
-          Já pensou em ter um atendimento 24h por dia no seu negócio ou em ter uma Central de Atendimento multicanais?
+          Já pensou em ter um atendimento 24h por dia no seu negócio ou em ter uma Central de Atendimento para múltiplos canais?
         </p>
         
         {/* CTA Button */}
@@ -34,7 +34,7 @@ export const HeroSection: React.FC = () => {
           <Button 
             variant="hero" 
             size="xl" 
-            className="min-w-[400px] text-lg font-semibold px-8 py-4 glow-primary hover:glow-primary"
+            className="w-full max-w-[400px] text-lg font-semibold px-8 py-4 glow-primary hover:glow-primary"
             onClick={() => window.open('https://wa.me/5567992054103?text=Olá! Gostaria de conhecer mais sobre as soluções da GTor Systems, poderia me ajudar?', '_blank')}
           >
             Clique aqui e descubra como!

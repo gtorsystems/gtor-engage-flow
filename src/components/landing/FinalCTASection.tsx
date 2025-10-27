@@ -12,7 +12,7 @@ export const FinalCTASection: React.FC = () => {
             <span className="text-brand-primary">Revolucione</span> o seu Atendimento!
           </h2>
           <p className="text-foreground-muted text-xl max-w-3xl mx-auto leading-relaxed">
-            Conheça nossos produtos e descubra o que melhor se encaixa em seu negócio, independente do seu <span className="font-semibold text-brand-primary">tamanho</span>.
+            Conheça nossos produtos e descubra o que melhor se encaixa no seu negócio, independentemente do seu <span className="font-semibold text-brand-primary">tamanho</span>.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export const FinalCTASection: React.FC = () => {
                 Entre em contato agora
               </h3>
               <p className="text-foreground-muted mb-6">
-                GTor Systems é a solução que precisa para sua empresa.
+                GTor Systems é a solução que você precisa para sua empresa.
               </p>
             </div>
 
