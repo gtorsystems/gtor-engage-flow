@@ -27,11 +27,11 @@ export const Footer: React.FC = () => {
             </a>
             
             <a 
-              href="mailto:contato@gtorsystems.cloud"
+              href="mailto:gtor.systems@gmail.com"
               className="flex items-center gap-3 text-foreground hover:text-brand-primary transition-smooth group"
             >
               <Mail className="h-5 w-5 text-brand-primary group-hover:glow-subtle transition-smooth" />
-              <span className="font-medium text-2xl">contato@gtorsystems.cloud</span>
+              <span className="font-medium text-2xl">gtor.systems@gmail.com</span>
             </a>
           </div>
           

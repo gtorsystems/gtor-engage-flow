@@ -73,7 +73,7 @@ export const FinalCTASection: React.FC = () => {
                 variant="hero" 
                 size="xl" 
                 className="w-full text-lg font-semibold px-8 py-4 glow-primary hover:glow-primary"
-                onClick={() => window.open('https://wa.me/5567992054103?text=Olá, gostaria de solicitar uma demonstração gratuita da plataforma GTor Systems', '_blank')}
+                onClick={() => window.open('https://wa.me/5567992054103?text=Olá! Gostaria de conhecer mais sobre as soluções da GTor Systems, poderia me ajudar?', '_blank')}
               >
                 Fale conosco!
               </Button>
